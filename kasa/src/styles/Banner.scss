@@ -1,0 +1,34 @@
+// src/styles/Banner.scss
+.banner {
+    position: relative;
+    background: url('../assets/images/banner.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 150px; /* Ajusté à la hauteur demandée */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 93%;
+    transform: translateX(3%);
+    border-radius: 25px;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Fond noir transparent couvrant toute la bannière */
+      border-radius: 25px; /* Même border-radius pour la superposition */
+    }
+  
+    h1 {
+      position: relative; /* Assure que le texte soit au-dessus de la superposition */
+      font-size: 2.5em;
+      padding: 20px;
+      font-family: Montserrat; 
+    }
+  }
+  
